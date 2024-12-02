@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/fonts/TTHoves/stylesheet.css">
-    <link rel="stylesheet" href="/fonts/NeueMontreal/style.css">
+    <link rel="stylesheet" href="./fonts/TTHoves/stylesheet.css">
+    <link rel="stylesheet" href="./fonts/NeueMontreal/style.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -56,44 +56,156 @@
             </div>
         </header>
         <div class="whitebox">
-            <section class="container tariff">
-                <div class="tariff__choice">
-                    <h2>Выберите свой тариф</h2>
-                    <p>Подключитесь сейчас и пользуйтесь системой бесплатно до конца 2023 года!</p>
-                    <a href="#!">Сравнить тарифы →</a>
-                </div>
-                <div class="tariff__card tariff__base">
-                    <h2 class="tariff__title">Базовый</h2>
-                    <p class="tariff__desc">Подходит для самозанятых и микробизнесов до 3-х сотрудников</p>
-                    <p class="tariff__price tariff__price-1">0₽</p>
-                    <p class="tariff__option tariff__option-1">Смартфон — 1</p>
-                    <a class="btn" href="#!">Подключить</a>
-                </div>
-                <div class="tariff__card tariff__plus">
-                    <h2 class="tariff__title">Плюс</h2>
-                    <p class="tariff__desc">Для заведений до 150 кв.м. и до 5-и сотрудников зала в смене (официанты, администраторы, хостес)</p>
-                    <p class="tariff__price tariff__price-2">4 990₽</p>
-                    <p class="tariff__option">Смартфон — 3</p>
-                    <p class="tariff__option tariff__option--pad">Планшет — 1</p>
-                    <a class="btn" href="#!">30 дней бесплатно</a>
-                </div>
-                <div class="tariff__card tariff__business">
-                    <h2 class="tariff__title">Бизнес</h2>
-                    <p class="tariff__desc">Для заведений до 150 кв.м. и до 5-и сотрудников зала в смене (официанты, администраторы, хостес)</p>
-                    <p class="tariff__price-3">Индивидуальная цена</p>
-                    <p class="tariff__option">Смартфон — от 10 </p>
-                    <p class="tariff__option tariff__option--pad">Планшет — от 5</p>
-                    <a class="btn" href="#!">30 дней бесплатно</a>
-                </div>
-            </section>
-
-            <section class="instruments">
-                <div class="container">
-                    <h2 class="instruments__title">Инструменты, которые вы можете использовать</h2>
-                </div>
-            </section>
-                
+            <div class="border-b">
+                <section class="tariff container">
+                    <div class="tariff__choice">
+                        <h2>Выберите свой тариф</h2>
+                        <p>Подключитесь сейчас и пользуйтесь системой бесплатно до конца 2023 года!</p>
+                        <a href="#!">Сравнить тарифы →</a>
+                    </div>
+                    <div class="tariff__card tariff__base">
+                        <h2 class="tariff__title">Базовый</h2>
+                        <p class="tariff__desc">Подходит для самозанятых и микробизнесов до 3-х сотрудников</p>
+                        <p class="tariff__price">0₽</p>
+                        <div class="tariff__desc--opt"> 
+                            <p class="tariff__option tariff__option-1">Смартфон — 1</p>
+                            <a href="#!" class="btn tariff__btn">Подключить</a>
+                        </div>
+                    </div>
+                    <div class="tariff__card tariff__plus">
+                        <h2 class="tariff__title">Плюс</h2>
+                        <p class="tariff__desc">Для заведений до 150 кв.м. и до 5-и сотрудников зала в смене (официанты, администраторы, хостес)</p>
+                        <p class="tariff__price">4 990₽</p>
+                        <div class="tariff__desc--opt"> 
+                            <p class="tariff__option">Смартфон — 3</p>
+                            <p class="tariff__option tariff__option--pad">Планшет — 1</p>
+                            <a href="#!" class="btn tariff__btn">30 дней бесплатно</a>
+                        </div>
+                    </div>
+                    <div class="tariff__card tariff__business">
+                        <h2 class="tariff__title">Бизнес</h2>
+                        <p class="tariff__desc">Для заведений до 150 кв.м. и до 5-и сотрудников зала в смене (официанты, администраторы, хостес)</p>
+                        <p class="tariff__price-3">Индивидуальная цена</p>
+                        <div class="tariff__desc--opt">
+                            <p class="tariff__option">Смартфон — от 10 </p>
+                            <p class="tariff__option tariff__option--pad">Планшет — от 5</p>
+                            <a href="#!" class="btn tariff__btn">30 дней бесплатно</a>
+                        </div>
+                    </div>
+                </section>
             </div>
+
+            <section class="instruments container">
+                <h4 class="instruments__title">Инструменты, которые вы можете использовать</h4>
+                <div class="instruments__cards">
+
+                       <div class="card">
+                           <h2>Absolut POS</h2>
+                           <p>Начните продавать свои товары с любого устройства - мобильный телефон, 3в1, планшет, моноблок - без специальной подготовки</p>
+                           <div class="price">
+                                <h3>0 ₽/мес</h3>
+                           </div>
+                       </div>
+
+                       <div class="card">
+                           <h2>Аналитика</h2>
+                           <p>Специализированные отчеты в реальном времени - выручка, прибыл, фильтрация по категориям, движение товаров, учет затрат клиентов и акций</p>
+                           <div class="price">
+                                <h3>0 ₽/мес</h3>
+                           </div>
+                       </div>
+
+                       <div class="card">
+                           <h2>Лояльность</h2>
+                           <p>Удерживайте клиентов и увеличивайте ключевые метрики с удобной и простой системой лояльности</p>
+                           <div class="price">
+                                <h3>0 ₽/мес</h3>
+                           </div>
+                       </div>
+
+                       <div class="card">
+                           <h2>Аналитика по товарам</h2>
+                           <p>Узнайте как меняется цена у ваших поставщиков и как это влияет на вашу маржинальность</p>
+                           <div class="price">
+                                <h3>0 ₽/мес</h3>
+                           </div>
+                       </div>
+
+                       <div class="card">
+                           <h2>Роли и доступы</h2>
+                           <p>Настраивайте удобные для вас роли и присваивайте их любым сотрудникам</p>
+                           <div class="price">
+                                <h3>0 ₽/мес</h3>
+                           </div>
+                       </div>
+
+                       <div class="card">
+                           <h2>QR меню</h2>
+                           <p>Запускайте онлайн меню и автоматически генерируйте QR код</p>
+                           <div class="price">
+                                <h3>0 ₽/мес</h3>
+                           </div>
+                       </div>
+
+                       <div class="card">
+                           <h2>Эквайринг и 3в1</h2>
+                           <p>Мы интегрируемая со всеми терминалами на протоколе smart sale и aqsi</p>
+                           <div class="price">
+                                <h3>0 ₽/мес</h3>
+                           </div>
+                       </div>
+
+                       <div class="card">
+                           <h2>Инвентаризация</h2>
+                           <p>Удобная инвентаризация которую можно быстро провести с мобильного устройства</p>
+                           <div class="price">
+                                <h3>0 ₽/мес</h3>
+                           </div>
+                       </div>
+                </div>
+            </section>
+            <section class="connect container">
+                    <div class="connet__title">
+                        <h4>Подключение эквайринга и коммиссии</h4>
+                    </div>
+                    <div class="connect__cards">
+
+
+                        <div class="connect__card conncet__card-1">
+                            <img src="/images/conncet_1.svg" alt="">
+                            <h2>Торговый эквайринг</h2>
+                            <div class="card__desc">
+                                <p class="card__desc-p1">Когда клиент оплачивает счет через тап или пин код.</p>
+                                <p class="card__desc-p2">2.2% за транзакцию или 0.4% через СБП</p>
+                            </div>
+                        </div>
+
+                        <div class="connect__card conncet__card-2">
+                            <img src="/images/conncet_2.svg" alt="">
+                            <h2>Торговый эквайринг</h2>
+                            <div class="card__desc">
+                                <p class="card__desc-p1">Когда клиент оплачивает счет через тап или пин код.</p>
+                                <p class="card__desc-p2">2.2% за транзакцию или 0.4% через СБП</p>
+                            </div>
+                        </div>
+
+                        <div class="connect__card conncet__card-3">
+                            <img src="/images/conncet_3.svg" alt="">
+                            <h2>Торговый эквайринг</h2>
+                            <div class="card__desc">
+                                <p class="card__desc-p1">Когда клиент оплачивает счет через тап или пин код.</p>
+                                <p class="card__desc-p2">2.2% за транзакцию или 0.4% через СБП</p>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </section>
+
+
+
         </div>
     </div>
 </body>
